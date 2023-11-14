@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func BenchmarkSolution3(b *testing.B) {
+func BenchmarkSolve(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Solve("input.txt")
 	}

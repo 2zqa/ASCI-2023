@@ -4,13 +4,13 @@ import "testing"
 
 func BenchmarkSolution1(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Solution1("input.txt")
+		Solve("input.txt")
 	}
 }
 
 func TestSolution1(t *testing.T) {
 	expected := "68923"
-	result, err := Solution1("input.txt")
+	result, err := Solve("input.txt")
 	if err != nil {
 		t.Errorf("Solution1 returned an error: %v", err)
 	}

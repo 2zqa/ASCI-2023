@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
-	fmt.Println("Solution 1:")
-	fmt.Println(one.Solution1("one/input.txt"))
+	answer, err := one.Solve("one/input.txt")
+	if err != nil {
+		fmt.Printf("Something went wrong solving challenge 1: %s\n", err)
+	} else {
+		fmt.Printf("Solution 1: %s\n", answer)
+	}
 }

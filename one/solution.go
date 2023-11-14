@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Solution1(filePath string) (string, error) {
+func Solve(filePath string) (string, error) {
 	inputBytes, err := os.ReadFile(filePath)
 	if err != nil {
 		return "", err

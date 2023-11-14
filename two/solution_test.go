@@ -85,8 +85,8 @@ func TestParseLine(t *testing.T) {
 			wantErr: false,
 		},
 		{
-			name: "empty line",
-			line: "",
+			name:    "empty line",
+			line:    "",
 			wantErr: true,
 		},
 		{

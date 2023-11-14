@@ -11,6 +11,17 @@ func BenchmarkSolve(b *testing.B) {
 	}
 }
 
+func TestSolve(t *testing.T) {
+	expected := "7908"
+	result, err := Solve("input.txt")
+	if err != nil {
+		t.Errorf("Solve returned an error: %v", err)
+	}
+	if result != expected {
+		t.Errorf("Solve = %v, expected %v", result, expected)
+	}
+}
+
 func TestSplitString(t *testing.T) {
 	testCases := []struct {
 		input    string
